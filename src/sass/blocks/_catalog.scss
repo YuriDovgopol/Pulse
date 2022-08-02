@@ -38,15 +38,20 @@
     }
     &__content {
         margin-top: 57px;
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: space-between;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         padding: 20px  18px 21px 23px;
         width: 303px;
         min-height: 442px;
+        margin-bottom: 19px;
         border: 2px solid #E8E8E8;
+        overflow: hidden;
         &__img {
             display: block;
             margin: 0 auto;
@@ -100,6 +105,65 @@
             font-size: 20px;
             color: #050505;
         }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list {
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            transition: 0.5s all;
+            margin-bottom: 0px;
+            padding-left: 19px;
+            &_active {
+                transform: translateX(-100%);
+                margin-right: 0px;
+            }
+            li {
+                position: relative;
+                margin-bottom: 16px;
+                list-style-type: none;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #555555;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: -15px;
+                    top: 6px;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $main-color;
+                }
+            }
+        }
+        &__back {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: $main-color;
+        }
+        
     }
     
 }
