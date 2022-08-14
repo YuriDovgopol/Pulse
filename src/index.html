@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pulse</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -63,21 +64,19 @@
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__block">
-                    <div class="advantages__icons">
+                    <div class="advantages__icon">
                         <img src="icons/cup.png" alt="cup">
                     </div>
                     <div class="advantages__subheader">Делимся опытом</div>
                     <div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantages__block">
-                    <div class="advantages__icons">
-                        <img src="icons/heart.png" alt="heart">
-                    </div>
+                    <img src="icons/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subheader">Заботимся о здоровье</div>
                     <div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
                 <div class="advantages__block">
-                    <div class="advantages__icons">
+                    <div class="advantages__icon">
                         <img src="icons/shoe.png" alt="shoe">
                     </div>
                     <div class="advantages__subheader">Делимся опытом</div>
@@ -525,7 +524,7 @@
     <section class="reviews"> 
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews__item">
+            <div class="reviews__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="images/photo/photo_1.png" alt="photo" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Ирина Иванченко</div>
@@ -539,7 +538,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="images/photo/photo_2.png" alt="photo" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Иван Сёмочкин</div>
@@ -553,7 +552,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="images/photo/photo_3.png" alt="photo" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Юлия Дашкина</div>
@@ -624,6 +623,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
 
